@@ -8,6 +8,7 @@
   <title>Dream Shop</title>
   <!-- vanilla css link  -->
   <link rel="stylesheet" href="./css/style.css" />
+
   <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
@@ -18,30 +19,30 @@
 </head>
 
 <body>
+  <!------------------ heading text ------------- -->
   <header>
-    <h1 class="text-center mt-3 text-success">Dream Shop</h1>
+    <h1 class="text-center mt-3 text-info">Dream Shop</h1>
   </header>
 
   <!-- main section  -->
   <main class="main">
   
-    <!-- search div  -->
+    <!---------------- search div ------------------------------ -->
         <div class="input-group shadow w-50 mx-auto my-5">
-          <input type="text" class="form-control" placeholder="search products" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-info fw-bold rounded" type="button" id="button-addon2" onclick="loadProducts()">Search</button>
+          <input type="text" class="form-control p-3" placeholder="search products" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-info fw-bold rounded px-5" type="button" id="button-addon2" onclick="loadProducts()">Search</button>
         </div>
       
-    
+<!----------- products display section --------------------- -->
     <div class="d-flex">
-
-        <!-- Dynamic product card -->
+        <!-- Dynamic product card------------- -->
           <div class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-3" id="all-products">
 
           </div>
       
-      <!-- -------------------cart table ----------------------------->
-
+<!-- ------------cart section-----------------  -->
       <div class="float-end cart h-25 bg-light w-25">
+        <!-- -----------------cart table --------------- -->
           <table class="table">
             <thead>
               <h1>My-Cart</h1>
@@ -91,7 +92,6 @@
       </div>
     
   </main>
-  <footer></footer>
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
